@@ -10,7 +10,7 @@ class Human():
         self.area = self.get_area()
 
     def get_area(self):
-        return (self.area[2] - self.area[0]) * (self.area[3] - self.area[1]) 
+        return self.area[2] * self.area[3]
     def xywh_to_xyxy(self):
         x, y, w, h = self.coord
         xmin, ymin, xmax, ymax = x, y, x + w, y + h
